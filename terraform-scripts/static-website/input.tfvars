@@ -1,0 +1,1 @@
+  bucket-name = "test-s3-static-web"
