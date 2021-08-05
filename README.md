@@ -7,7 +7,7 @@ This project is of simple static website hosting using  AWS S3 and terraform.
 
 Static web page will load images.
 
-Terraform script will create S3 bucket for hosting static website, S3 bucket for storing website S3 bucket logging.
+Terraform script will create S3 bucket for hosting static website and other S3 bucket for storing website S3 bucket logging.
 
 ## Below are the steps for running terraform script on Windows.
 
