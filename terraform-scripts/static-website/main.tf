@@ -4,6 +4,15 @@ provider "aws" {
   shared_credentials_file = "%USERPROFILE%\\.aws\\credentials"
 }
 
+terraform {
+  backend "s3" {
+    bucket  = "pp-test-static-web"
+    key     = "terraform.tfstate"
+    region  = "eu-central-1"
+    encrypt = true
+  }
+}
+
 ## S3
 # Creates bucket to store logs
 resource "aws_s3_bucket" "website_logs" {
@@ -43,6 +52,7 @@ resource "aws_s3_bucket" "website" {
   }
 
   tags = {
+    Owner = "pp"
     ManagedBy = "terraform"
     Changed   = formatdate("YYYY-MM-DD hh:mm ZZZ", timestamp())
   }
