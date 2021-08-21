@@ -57,8 +57,6 @@ aws s3 sync . s3://test-s3-static-web
 
 **3. Access the Website**
 
-URL - http://test-s3-static-web.s3-website.eu-west-3.amazonaws.com/
-
 ![image](https://user-images.githubusercontent.com/19345296/128268769-d8818ccc-bc45-4907-90a0-b85233720afe.png)
 
 
